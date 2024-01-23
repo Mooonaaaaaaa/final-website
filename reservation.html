@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | Kuromi's Yotel</title>
+    <style>
+        body {
+            background-color: #c097cf;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border: none;
+            border-collapse: collapse;
+        }
+
+        #header {
+            background-color: #c097cf;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #header img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #header h2 {
+            margin: 0;
+        }
+
+        #navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #330033;
+        }
+
+        #navigation li {
+            float: left;
+        }
+
+        #navigation li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #navigation li a:hover {
+            background-color: #c097cf;
+            color: black;
+        }
+
+        #content {
+            background-color: #c097cf;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #content img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        #content p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        #reservation-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #reservation-form label {
+            display: block;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+
+        #reservation-form input,
+        #reservation-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        #reservation-form button {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr id="header">
+            <td colspan="2">
+                <img src="1.jpg" align="left" alt="Logo" width="130" height="130">
+                <h2><a style="display: block; color: white; text-align: center; padding: 0px 200px; font-size: x-large;">RESERVATION</a></h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faqs.html">FAQ'S</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="announcement.html">Announcement</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr id="content">
+            <td>
+                <h2>RESERVATION FORM</h2>
+                <form id="reservation-form" action="process_reservation.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="check-in">Check-in Date:</label>
+                    <input type="date" id="check-in" name="check-in" required>
+
+                    <label for="check-out">Check-out Date:</label>
+                    <input type="date" id="check-out" name="check-out" required>
+
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+
+                    <button type="submit">Submit Reservation</button>
+                   
+                </form>
+                <footer>
+                    <div style="background-color: #330033; color: white; text-align: center; padding: 10px;">
+                        <p>&copy; 2024 Kuromi's Yotel. All rights reserved.</p>
+                        <p>Designed by Mona</p>
+                    </div>
+        </footer>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
